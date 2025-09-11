@@ -1,0 +1,147 @@
+.container {
+    max-width: 600px;
+    /* padding: 30px; */
+    margin: 0 auto;
+    width: 600px;
+    height: 650px;
+    background-color: #c3cff4;
+    border-radius: 30px;
+}
+
+.stats {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 12px;
+    
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    border-radius: 12px;
+    padding: 16px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.textinput {
+    
+    margin-left: 24px;
+    padding-left: 10px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: 2px solid black;
+    font-style: oblique;
+    outline: none;
+    background: white;
+    
+
+
+}
+
+.textinput:focus {
+    border-color: #c71191;
+    box-shadow: 2px 2px 4px rgba(223, 94, 226, 0.5);
+
+}
+
+#AddTaskBUtton {
+    width: 170px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 30px;
+    color: rgb(201, 42, 42);
+    background-color: #7de2f0;
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(223, 94, 226, 0.5);
+    cursor: pointer;
+
+}
+
+#AddTaskBUtton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(210, 27, 230, 0.3);
+    border-color: #c71191;
+
+}
+
+.filter {
+    /* display: flex;
+    width: 300px;
+    margin: 30px;
+    justify-items: center;
+    justify-content: space-evenly; */
+    display: flex;
+    size: 200px;
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px;
+    background: #c3cff4;
+    border-radius: 12px;
+}
+
+#but1 {
+    flex: 1;
+    size: 40px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+#PendingButton {
+    flex: 1;
+
+    border-radius: 10px;
+
+}
+
+#CompletedButton {
+    flex: 1;
+    border-radius: 10px;
+
+}
+
+.tasks-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    background-color: rgb(252, 249, 249);
+    border-radius: 20px;
+}

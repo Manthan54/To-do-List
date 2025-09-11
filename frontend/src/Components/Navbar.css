@@ -1,0 +1,25 @@
+.navdiv{
+    background-color: rgb(133, 144, 230);
+    padding: 10px;
+    
+    
+    
+}
+div ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    
+}
+div ul li{
+    font-size: large;
+    color: blue;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(32, 8, 8, 0.5);
+    
+
+}
