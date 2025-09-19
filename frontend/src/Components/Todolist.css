@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container */
+.container1 {
+    background: #ffffff;
+    width: 500px;
+    max-width: 90vw;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading */
+.h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a4aef;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Input + Button */
+.card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.textinput {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.textinput:focus {
+    border: 2px solid #4a4aef;
+}
+
+#AddTaskBUtton {
+    background: #4a4aef;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+#AddTaskBUtton:hover:not(:disabled) {
+    background: #2e2eb5;
+}
+
+#AddTaskBUtton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Filters */
+.filter {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 24px;
+    padding: 5px;
+    background: #e4e7e8;
+    border-radius: 12px;
+}
+
+.filter button {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.filter button:hover {
+    background: #4a4aef;
+    color: white;
+}
+
+.filter button.active {
+    background: #4a4aef;
+    color: white;
+}
+
+/* Tasks list */
+.tasks-container {
+    text-align: left;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.tasks-container ul {
+    /* list-style: none;
+    padding: 0;
+    margin: 0; */
+    display: flex;
+    flex-direction: column;
+    /* Forces vertical stacking */
+    width: 100%;
+}
+
+.tasks-container li {
+    background: #fff;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.tasks-container li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+.task-text:hover {
+    color: #4a4aef;
+}
+
+.tasks-container li.completed .task-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background: #ff3742;
+    transform: scale(1.1);
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 40px 20px;
+}
+
+.empty-state h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Scrollbar styling */
+.tasks-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tasks-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
