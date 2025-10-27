@@ -1,0 +1,90 @@
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.task-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.task-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.priority-badge, .status-badge {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.task-description {
+  color: #666;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.task-due-date {
+  color: #888;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.task-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.status-btn {
+  background: #2ed573;
+  color: white;
+}
+
+.edit-btn {
+  background: #3742fa;
+  color: white;
+}
+
+.delete-btn {
+  background: #ff4757;
+  color: white;
+}
+
+.task-actions button:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}

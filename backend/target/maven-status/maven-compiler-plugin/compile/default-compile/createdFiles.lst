@@ -1,0 +1,17 @@
+com/todo/backend/entity/TaskAssignee.class
+com/todo/backend/TodoBackendApplication.class
+com/todo/backend/entity/Task$TaskStatus.class
+com/todo/backend/entity/Task$TaskBuilder.class
+com/todo/backend/controller/UserController$LoginRequest.class
+com/todo/backend/repository/TaskAssigneeRepository.class
+com/todo/backend/repository/UserRepository.class
+com/todo/backend/entity/Task$TaskPriority.class
+com/todo/backend/entity/Task.class
+com/todo/backend/entity/User$UserBuilder.class
+com/todo/backend/repository/TaskRepository.class
+com/todo/backend/service/UserService.class
+com/todo/backend/controller/UserController.class
+com/todo/backend/entity/User.class
+com/todo/backend/controller/TaskController.class
+com/todo/backend/entity/TaskAssignee$TaskAssigneeBuilder.class
+com/todo/backend/service/TaskService.class
