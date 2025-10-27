@@ -197,8 +197,12 @@ Runs on 👉 **http://localhost:3000**
 
 ## 👨‍💻 Author
 **Manthan Jagtap**  
-📚 College Project — *GameDevUtopia Club*  
+📚 College Project
 💻 Full-Stack Developer | React + Spring Boot Enthusiast  
+
+**Vivek Choudhary**  
+📚 College Project
+💻 Frontend Developer | React + Spring Boot Enthusiast  
 
 ---
 
